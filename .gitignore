@@ -8,6 +8,9 @@
 *.gch
 *.pch
 
+# VIM TMP Files
+*.swp
+
 # Libraries
 *.lib
 *.a
