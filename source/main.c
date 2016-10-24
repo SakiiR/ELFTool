@@ -2,7 +2,7 @@
 
 void					usage(const char *file_name)
 {
-	printf("/*  SakiiR ELF Utility   */\n");
+	printf("\n/*  SakiiR ELF Utility   */\n");
 	printf("/*  ****** *** *******   */ \n\n");
 
 	printf("[+] Exemple Usage : %s --binary BINARY --imports\n", file_name);
@@ -15,10 +15,9 @@ int						main(int argc, char **argv)
 
 	if (get_options(argc, argv, &options) == RETURN_FAILURE)
 	{
-		printf("[-] Failed to retreive command line options\n");
+		usage(argv[0]);
 		return (RETURN_FAILURE);
 	}
-
 	dump_options(&options);
 	(void)argc;
 	(void)argv;
