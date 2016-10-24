@@ -4,6 +4,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <libelf.h>
 
 # define RETURN_SUCCESS		(0)
 # define RETURN_FAILURE		(1)
@@ -25,6 +26,7 @@ typedef struct				s_option
 }							t_option;
 
 int							get_options(int argc, char **argv, t_options *options);
+void						init_options(t_options *options);
 void						dump_options(t_options *options);
 int							option_binary(char **ptr, t_options *options);
 int							option_imports(char **ptr, t_options *options);

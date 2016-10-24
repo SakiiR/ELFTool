@@ -12,6 +12,12 @@ void				dump_options(t_options *options)
 	printf("options->o_imports : %d\n", options->o_imports);
 }
 
+void				init_options(t_options *options)
+{
+	options->binary_path = NULL;
+	options->o_imports = 0;
+}
+
 int					get_options(int argc,
 								char **argv,
 								t_options *options)

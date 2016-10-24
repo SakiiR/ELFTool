@@ -4,13 +4,14 @@ RM			= rm -f
 
 NAME		= ELFTool
 
-CFLAGS		+= -W -Werror -Wextra -ansi -pedantic -g3 -I./include
+CFLAGS		+= -W -Wall -Werror -Wextra -ansi -pedantic -g3 -I./include
 
 LDFLAGS		+= 
 
 SRCS		=  source/main.c			\
 			   source/options.c			\
 			   source/options_list.c	\
+			   source/imports.c			\
 
 OBJS		= $(SRCS:.c=.o)
 

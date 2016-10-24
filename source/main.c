@@ -13,6 +13,7 @@ int						main(int argc, char **argv)
 {
 	t_options 			options;
 
+	init_options(&options);
 	if (get_options(argc, argv, &options) == RETURN_FAILURE)
 	{
 		usage(argv[0]);
