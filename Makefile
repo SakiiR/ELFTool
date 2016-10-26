@@ -4,7 +4,7 @@ RM			= rm -f
 
 NAME		= ELFTool
 
-CFLAGS		+= -W -Wall -Werror -Wextra -ansi -pedantic -g3 -I./include
+CFLAGS		+= -W -Wall -Werror -Wextra -ansi -pedantic -g3
 
 LDFLAGS		+= 
 
