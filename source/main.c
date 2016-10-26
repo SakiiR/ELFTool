@@ -1,4 +1,4 @@
-#include <resources.h>
+#include "resources.h"
 
 void					usage(const char *file_name)
 {

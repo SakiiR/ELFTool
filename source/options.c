@@ -1,4 +1,4 @@
-#include <resources.h>
+#include "resources.h"
 
 const t_option 		g_options[] = {
 	{"--binary", &option_binary},
