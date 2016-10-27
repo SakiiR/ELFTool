@@ -1,4 +1,4 @@
-#include "../include/resources.h"
+#include "../../include/resources.h"
 
 int					dump_imports(const char *binary_path)
 {

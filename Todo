@@ -1,0 +1,10 @@
+# Generic Option Gesture
+
+May u can add some features !
+
+Eventually:
+
+* imports ( list binary imports )
+* strings ( list string -> like 'strings' binary )
+* ROP     ( Find ROP Gadget, sort them ? )
+* .to improve

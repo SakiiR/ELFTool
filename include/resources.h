@@ -13,10 +13,17 @@
 /**
  * Command Line Options Structure 
  */
+
+# define MAX_OPT            (0x3)
+
+# define O_IMPORTS          (0x00000000)
+# define O_ROP              (0x00000001)
+# define O_STRINGS          (0x00000002)
+
 typedef struct				s_options
 {
 	char					*binary_path;
-	char					o_imports; 
+    char                    o_all[MAX_OPT];
 }							t_options;
 
 typedef struct				s_option
@@ -30,5 +37,8 @@ void						init_options(t_options *options);
 void						dump_options(t_options *options);
 int							option_binary(char **ptr, t_options *options);
 int							option_imports(char **ptr, t_options *options);
+int                         option_rop(char **ptr, t_options *options);
+int                         option_strings(char **ptr, t_options *options);
+
 
 #endif /* !*RESOURCES_H_ */

@@ -8,10 +8,11 @@ CFLAGS		+= -W -Wall -Werror -Wextra -ansi -pedantic -g3
 
 LDFLAGS		+= 
 
-SRCS		=  source/main.c			\
-			   source/options.c			\
-			   source/options_list.c	\
-			   source/imports.c			\
+SRCS		=  source/main.c				\
+			   source/options.c				\
+			   source/options_list.c		\
+			   source/imports/imports.c		\
+			   source/rop/rop.c				\
 
 OBJS		= $(SRCS:.c=.o)
 

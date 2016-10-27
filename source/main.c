@@ -2,11 +2,10 @@
 
 void					usage(const char *file_name)
 {
-	printf("\n/*  SakiiR ELF Utility   */\n");
-	printf("/*  ****** *** *******   */ \n\n");
-
-	printf("[+] Exemple Usage : %s --binary BINARY --imports\n", file_name);
-	printf("[>] List BINARY's Imports.\n");
+	printf( "\n/*  SakiiR ELF Utility   */\n"
+	        "/*  ****** *** *******   */ \n\n"
+            "[+] Exemple Usage : %s --binary BINARY --imports\n"
+	        "[>] List BINARY's Imports.\n", file_name);
 }
 
 int						main(int argc, char **argv)
